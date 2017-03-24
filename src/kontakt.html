@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1>Kontakt</h1>
+
+
+    <p>Ob für Fragen oder Anregungen, nehmen sie gerne jederzeit Kontakt zu uns auf!</p>
+
+    <p>Besuchen Sie gerne auch unser Profil bei <a href="https://www.houzz.de/pro/meisterwerk-hamburg/meisterwerk-die-tischlerei" target="_blank">houzz</a>.</p>
+
+    <p>Meisterwerk die Tischlerei GmbH</p>
+
+    <p>
+      Tischlermeister Benjamin Biermann </br>
+      Holsteiner Chaussee 5a </br>
+      22523 Hamburg
+    </p>
+
+    <p>Tel. +49 40 572 044 88</p>
+
+    <p>Mobil +49 171 1943278</p>
+
+    <p>Fax +49 40 572 044 89</p>
+
+    <p>Email <a href="mailto:info@meisterwerk-hamburg.de">info@meisterwerk-hamburg.de</a></p>
+
+    <p>Öffnungszeiten: 09:00 - 18:00</p>
+
+    <p>Umsatzsteuer-ID:  DE297015747</p>
+
+    <p>HRB: 131504</p>
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div id="map"></div>
+  </div>
+</div>
+
+{% endblock main %}
+
+{% block scripts %}
+<script>
+  function initMap() {
+    var myLatLng = {lat: 53.6092969, lng: 9.9022187};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Hello World!'
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLCo8ScGVu3TAqaZNxppE7qV4pafmEKHU&callback=initMap"></script> 
+{% endblock scripts %}
