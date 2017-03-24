@@ -2,8 +2,8 @@
 -------------------------------------------------- */
 @font-face{
     font-family: "Frutiger-Condensed";
-    src: url('/assets/fonts/Frutiger-Condensed.ttf'),
-    url('/assets/fonts/Frutiger-Condensed.eot'); /* IE */
+    src: url('./assets/fonts/Frutiger-Condensed.ttf'),
+    url('./assets/fonts/Frutiger-Condensed.eot'); /* IE */
 }
 
 html {

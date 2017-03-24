@@ -18,3 +18,6 @@ build: env/bin/staticjinja
 
 watch: env/bin/staticjinja
 	env/bin/staticjinja watch --srcpath ./src --outpath ./build --static=assets
+
+deploy:
+	git subtree push --prefix build origin gh-pages
