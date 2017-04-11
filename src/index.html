@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 
 {% block main %}
+<div class="row">
+  <div class="col-xs-12">
+    <div class="slider">
+      <img src="/assets/img/slider/lampen.jpg" alt="lampen">
+      <img src="/assets/img/slider/bank_tisch.jpg" alt="bank_tisch">
+      <img src="/assets/img/slider/schreibtisch.jpg" alt="schreibtisch">
+    </div>
+  </div>
+</div>
 
 <div class="row">
   <div class="col-xs-12">
@@ -21,3 +30,13 @@
 
 {% endblock main %}
 
+{% block scripts %}
+<script>
+  $(document).ready(function(){
+    $('.slider').slick({
+      autoplay: true
+    });
+  });
+</script>
+
+{% endblock scripts %}
