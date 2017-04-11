@@ -216,10 +216,12 @@ p, label{
 /*SLIDER*/
 
 .slick-next{
+  z-index: 12;
   right: 25px;
 }
 
 .slick-prev {
+  z-index: 12;
   left: 25px;
 }
 
